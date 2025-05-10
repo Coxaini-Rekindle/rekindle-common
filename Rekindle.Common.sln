@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rekindle.Exceptions", "Rekindle.Exceptions\Rekindle.Exceptions.csproj", "{08BD054A-7702-476F-AC45-80B9FEB5F38E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rekindle.Exceptions.Api", "Rekindle.Exceptions.Api\Rekindle.Exceptions.Api.csproj", "{97BDD987-A62A-47D4-B75F-5AC7EF18C077}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08BD054A-7702-476F-AC45-80B9FEB5F38E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08BD054A-7702-476F-AC45-80B9FEB5F38E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08BD054A-7702-476F-AC45-80B9FEB5F38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08BD054A-7702-476F-AC45-80B9FEB5F38E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97BDD987-A62A-47D4-B75F-5AC7EF18C077}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97BDD987-A62A-47D4-B75F-5AC7EF18C077}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97BDD987-A62A-47D4-B75F-5AC7EF18C077}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97BDD987-A62A-47D4-B75F-5AC7EF18C077}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
