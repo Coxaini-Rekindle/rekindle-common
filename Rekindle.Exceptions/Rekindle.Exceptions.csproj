@@ -4,6 +4,19 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>Rekindle.Exceptions</Title>
+        <Description>Provides a set of common exception classes, including a base AppException and specific exceptions like ValidationException, for standardized error handling within Rekindle applications. This package helps in creating consistent error responses and categorizing application-specific errors.</Description>
+        <PackageIcon>5eeca45d-9817-4175-a52d-11804fd9abce.png</PackageIcon>
+        <RepositoryUrl>https://github.com/Coxaini-Rekindle/rekindle-common</RepositoryUrl>
+        <PackageTags>rekindle;exceptions;errorhandling;appexception;validation</PackageTags>
     </PropertyGroup>
+
+    <ItemGroup>
+      <None Update="5eeca45d-9817-4175-a52d-11804fd9abce.png">
+        <Pack>True</Pack>
+        <PackagePath></PackagePath>
+      </None>
+    </ItemGroup>
 
 </Project>

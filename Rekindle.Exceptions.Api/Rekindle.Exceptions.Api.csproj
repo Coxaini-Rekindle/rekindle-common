@@ -4,6 +4,10 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <Title>Rekindle.Exceptions.Api</Title>
+        <Description>Contains ASP.NET Core middleware for handling exceptions, particularly those derived from Rekindle.Exceptions.AppException. This package automatically translates exceptions into standardized application/problem+json responses, making API error handling consistent and compliant with RFC 7807.</Description>
+        <RepositoryUrl>https://github.com/Coxaini-Rekindle/rekindle-common</RepositoryUrl>
+        <PackageTags>rekindle;exceptions;api;middleware;errorhandling;problemdetails</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>

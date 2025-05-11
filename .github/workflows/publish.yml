@@ -1,0 +1,42 @@
+name: Publish NuGet Packages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write 
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '9.x' 
+
+    - name: Restore dependencies
+      run: dotnet restore Rekindle.Common.sln
+
+    - name: Build projects
+      run: dotnet build Rekindle.Common.sln --configuration Release --no-restore
+
+    - name: Pack Rekindle.Exceptions
+      run: dotnet pack Rekindle.Exceptions/Rekindle.Exceptions.csproj --configuration Release --no-build -o ./packages
+
+    - name: Pack Rekindle.Exceptions.Api
+      run: dotnet pack Rekindle.Exceptions.Api/Rekindle.Exceptions.Api.csproj --configuration Release --no-build -o ./packages
+
+    - name: Publish to GitHub Packages
+      run: |
+        dotnet nuget add source --username USERNAME --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/Coxaini-Rekindle/index.json"
+        dotnet nuget push "./packages/*.nupkg" --api-key ${{ secrets.GITHUB_TOKEN }} --source "github" --skip-duplicate
+      env:
+        USERNAME: ${{ github.actor }} 
+
