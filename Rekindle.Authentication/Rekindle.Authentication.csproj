@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Version>1.0.0</Version>
+        <Authors>Rekindle</Authors>
+        <Description>A comprehensive authentication library for .NET applications providing JWT token generation and validation, secure password hashing, refresh token handling, and user management functionality.</Description>
+        <PackageTags>authentication;jwt;security;tokens;password-hashing;identity</PackageTags>
+        <PackageProjectUrl>https://github.com/Rekindle/Rekindle.Authentication</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Rekindle/Rekindle.Authentication</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.5" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.5" />
+      <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.11.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+</Project>

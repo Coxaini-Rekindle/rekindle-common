@@ -32,6 +32,9 @@ jobs:
 
     - name: Pack Rekindle.Exceptions.Api
       run: dotnet pack Rekindle.Exceptions.Api/Rekindle.Exceptions.Api.csproj --configuration Release --no-build -o ./packages
+      
+    - name: Pack Rekindle.Authentication
+      run: dotnet pack Rekindle.Authentication/Rekindle.Authentication.csproj --configuration Release --no-build -o ./packages
 
     - name: Publish to GitHub Packages
       run: |

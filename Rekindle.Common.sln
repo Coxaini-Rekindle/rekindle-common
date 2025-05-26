@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.github\workflows\publish.yml = .github\workflows\publish.yml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rekindle.Authentication", "Rekindle.Authentication\Rekindle.Authentication.csproj", "{4CA35CC4-6527-4DA1-80C5-2D4A57450F79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,5 +25,9 @@ Global
 		{97BDD987-A62A-47D4-B75F-5AC7EF18C077}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97BDD987-A62A-47D4-B75F-5AC7EF18C077}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97BDD987-A62A-47D4-B75F-5AC7EF18C077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CA35CC4-6527-4DA1-80C5-2D4A57450F79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CA35CC4-6527-4DA1-80C5-2D4A57450F79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CA35CC4-6527-4DA1-80C5-2D4A57450F79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CA35CC4-6527-4DA1-80C5-2D4A57450F79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
