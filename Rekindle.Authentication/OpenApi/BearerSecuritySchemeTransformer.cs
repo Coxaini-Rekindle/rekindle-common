@@ -3,7 +3,7 @@ using Microsoft.OpenApi.Models;
 
 namespace Rekindle.Authentication.OpenApi;
 
-internal sealed class BearerSecuritySchemeTransformer(
+public sealed class BearerSecuritySchemeTransformer(
     Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider authenticationSchemeProvider)
     : IOpenApiDocumentTransformer
 {
